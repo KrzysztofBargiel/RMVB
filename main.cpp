@@ -12,17 +12,21 @@ int main(int argc, const char * argv[])
 
     Colony Ogrimmar;
     
-    Bunny nowy = {"Max", 2};
-    Bunny dwa = {"Kac", 2};
-    Bunny trzy = {"Rio", 2};
+    Bunny jeden;
+    Bunny dwa;
+    Bunny trzy;
+    Bunny cztery;
+    Bunny piec;
     
-    farma.push_back(nowy);
+    
+    farma.push_back(jeden);
     farma.push_back(dwa);
     farma.push_back(trzy);
-    
+    farma.push_back(cztery);
+    farma.push_back(piec);
     for (list<Bunny>::iterator it = farma.begin(); it != farma.end(); it++)
     {
-        cout << (*it).getName() << " " << (*it).getAge() <<  endl;
+        cout << (*it).getName() << " " << (*it).getAge() << " " <<(*it).getSex() << endl;
     }
         
     

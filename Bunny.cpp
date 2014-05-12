@@ -16,14 +16,17 @@ int  Bunny::getAge()
 {
     return Age;
 }
-Bunny::Bunny() {};
-Bunny::Bunny(string a_Name, int a_Age)
+int Bunny::getSex()
 {
-    Name = a_Name;
-    Age = a_Age;
+    return plec ;
 }
-
+Bunny::Bunny()
+{
+    Name = "NONAME";
+    Age = 0;
+    plec = (Sex)(rand() % 2);
+    
+};
 
 Bunny::~Bunny(){};
 
-// github sucks
