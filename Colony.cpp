@@ -1,10 +1,11 @@
 #include "Colony.h"
 #include "Bunny.h"
+#include <time.h> // time()
 
 
 Colony::Colony()
 {
-    srand((int)time(NULL));
+    srand(time(NULL));
 }
 
 bool Colony::Cycle()

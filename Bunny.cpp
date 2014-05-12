@@ -1,10 +1,13 @@
 #include "Bunny.h"
+#include <cstdlib> // srand(), rand()
 
 using namespace std;
 
 void Bunny::Print()
 {
-    cout << Bunny::getName() << " " << Bunny::getAge();
+	Bunny::getName();
+	cout << " ";
+	Bunny::getAge();
 }
 
 string Bunny::getName()

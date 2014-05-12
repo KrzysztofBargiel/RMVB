@@ -18,7 +18,6 @@ int main(int argc, const char * argv[])
     Bunny cztery;
     Bunny piec;
     
-    
     farma.push_back(jeden);
     farma.push_back(dwa);
     farma.push_back(trzy);
@@ -26,7 +25,12 @@ int main(int argc, const char * argv[])
     farma.push_back(piec);
     for (list<Bunny>::iterator it = farma.begin(); it != farma.end(); it++)
     {
-        cout << (*it).getName() << " " << (*it).getAge() << " " <<(*it).getSex() << endl;
+		(*it).getName();
+		cout << " ";
+		(*it).getAge();
+		cout << " ";
+		(*it).getSex();
+		cout << endl;
     }
         
     
