@@ -1,7 +1,6 @@
 #include <iostream>
 #include "Colony.h"
 #include <cstdlib>
-#include <time.h>
 #include <fstream>
 #include <vector>
 

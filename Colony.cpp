@@ -1,5 +1,6 @@
 #include "Colony.h"
 #include "Bunny.h"
+#include <time.h>
 
 
 Colony::Colony()
