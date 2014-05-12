@@ -9,6 +9,7 @@ using namespace std;
 
 int main(int argc, const char * argv[])
 {
+
     list<Bunny> farma;
     vector<string> imiona;
     

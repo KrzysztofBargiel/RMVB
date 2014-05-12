@@ -22,7 +22,7 @@ int Bunny::getSex()
 }
 Bunny::Bunny()
 {
-    Name =
+    Name = "NoName";
     Age = 0;
     plec = (Sex)(rand() % 2);
     
