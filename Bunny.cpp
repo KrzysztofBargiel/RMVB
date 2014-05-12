@@ -4,7 +4,7 @@ using namespace std;
 
 void Bunny::Print()
 {
-    cout << Bunny::getName() << " " << Bunny::getAge();
+    std::cout << Bunny::getName() << " " << Bunny::getAge() << " " << Bunny::getSex();
 }
 
 string Bunny::getName()
@@ -22,7 +22,7 @@ int Bunny::getSex()
 }
 Bunny::Bunny()
 {
-    Name = "NONAME";
+    Name =
     Age = 0;
     plec = (Sex)(rand() % 2);
     

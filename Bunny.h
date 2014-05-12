@@ -12,6 +12,7 @@ public:
     string getName();
     int  getAge();
     int  getSex();
+    bool NameFromFile();
 
     Bunny();
     ~Bunny();
