@@ -1,21 +1,26 @@
 #include "Colony.h"
 
-bool Cycle()
+Colony::Colony()
+{
+    
+}
+
+bool Colony::Cycle()
 {
     return false;
 }
 
-bool newBunny()
+bool Colony::newBunny()
 {
     return false;
 }
 
-bool killBunny()
+bool Colony::killBunny()
 {
     return false;
 }
 
-bool exterminate()
+bool Colony::exterminate()
 {
     return false;
 }

@@ -1,6 +1,7 @@
 #pragma once
 #include <iostream>
 #include <list>
+#include "Bunny.h"
 
 using namespace std;
 
@@ -11,6 +12,10 @@ public:
     bool newBunny();
     bool killBunny();
     bool exterminate();
+    
+    Colony();
+    ~Colony();
+    
 
 
 private:
