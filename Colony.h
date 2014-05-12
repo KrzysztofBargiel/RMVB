@@ -8,18 +8,19 @@ using namespace std;
 class Colony
 {
 public:
+    void wypisz();
     bool Cycle();
     bool newBunny();
     bool killBunny();
     bool exterminate();
     
     Colony();
-    ~Colony();
+    //~Colony();
     
 
 
 private:
-    list<string> farma;
+     //list<Bunny> farma;
 
 
 };

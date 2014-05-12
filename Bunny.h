@@ -1,7 +1,4 @@
-
-#ifndef __RMVB__Bunny__
-#define __RMVB__Bunny__
-
+#pragma once
 #include <iostream>
 
 using namespace std;
@@ -10,10 +7,11 @@ class Bunny
 {
 public:
     enum Sex {M = 0, F = 1, ERROR = -1};
-
-    void setName();
+    void Print();
+    string getName();
     int  getAge();
 
+    Bunny();
     Bunny(string, int);
     ~Bunny();
 
@@ -22,5 +20,3 @@ private:
     string Name = "";
     int Age = 0;
 };
-
-#endif /* defined(__RMVB__Bunny__) */
