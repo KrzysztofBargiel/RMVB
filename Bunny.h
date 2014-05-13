@@ -1,5 +1,6 @@
 #pragma once
 #include <iostream>
+#include <vector>
 
 using namespace std;
 
@@ -12,8 +13,9 @@ public:
     string getName();
     int  getAge();
     int  getSex();
-    bool NameFromFile();
-
+    void GetListName();
+    vector<string> HighBornBunnies;
+    string tab[2] = {"Adam","Max"};
     Bunny();
     ~Bunny();
 
