@@ -9,7 +9,7 @@ class Colony
 {
 public:
     void wypisz();
-    void Cycle();
+    void Cycle(int a);
     void newBunny();
     bool killBunny();
     bool exterminate();

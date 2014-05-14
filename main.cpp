@@ -4,12 +4,14 @@
 
 using namespace std;
 
-int main(int argc, const char * argv[])
+int main()
 {
 
     Colony Ogrimmar;
-
-    Ogrimmar.Cycle();
+    int ilosc = 0;
+    cout <<"Podaj ilosc cyklil: ";
+    cin >> ilosc;
+    Ogrimmar.Cycle(ilosc);
     
     return 0;
 }

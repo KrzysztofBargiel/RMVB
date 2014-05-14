@@ -9,7 +9,7 @@ Colony::Colony()
     srand((int)time(NULL));
 }
 
-void Colony::Cycle()
+void Colony::Cycle(int ilosc)
 {
     int cycle = 0;
 
@@ -25,27 +25,30 @@ void Colony::Cycle()
     farm.push_back(cztery);
     farm.push_back(piec);
     
-  
-    
-    while (cycle <= 10)
-    {
-        newBunny();
-        cycle++;
-        
-    }
-
     for (list<Bunny>::iterator it = farm.begin(); it != farm.end(); it++)
     {
         (*it).Print();
         cout << endl;
-        sleep(2);
     }
+    
+    while (cycle <= ilosc)
+    {
+        newBunny();
+        Bunny it = farm.back();
+        it.Print();
+        cout << endl;
+        sleep(1);
+        cycle++;
+    }
+    
+
+ 
 }
 
 void Colony::newBunny()
 {
-    Bunny szczesc;
-    farm.push_back(szczesc);
+    Bunny szesc;
+    farm.push_back(szesc);
 }
 
 bool Colony::killBunny()
