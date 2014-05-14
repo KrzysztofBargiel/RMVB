@@ -16,6 +16,7 @@ string Bunny::getName()
 int  Bunny::getAge()
 {
     return Age;
+
 }
 string Bunny::getSex()
 {

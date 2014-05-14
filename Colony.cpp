@@ -34,15 +34,13 @@ void Colony::Cycle(int ilosc)
     while (cycle <= ilosc)
     {
         newBunny();
-        Bunny it = farm.back();
-        it.Print();
+        Bunny last = farm.back();
+        last.Print();
         cout << endl;
         sleep(1);
         cycle++;
     }
     
-
- 
 }
 
 void Colony::newBunny()
