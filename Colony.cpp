@@ -47,8 +47,8 @@ void Colony::Cycle(int ilosc)
 
 void Colony::newBunny()
 {
-    Bunny szesc;
-    farm.push_back(szesc);
+    Bunny a_New;
+    farm.push_back(a_New);
 }
 
 bool Colony::killBunny()

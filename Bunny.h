@@ -9,12 +9,14 @@ class Bunny
 {
 public:
     void Print();
+    //Getters
     string getName();
     int  getAge();
     string getSex();
     void GetListName();
     string GetKolor();
-    string Sex();
+    
+    string Sex(); // return random sex or vampire 
 
     vector<string> HighBornBunnies;
     vector<string> Color {"White","Brown","Black","Spotted"};
