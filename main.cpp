@@ -6,7 +6,7 @@ using namespace std;
 
 int main(int argc, const char * argv[])
 {
-    list<Bunny> farma;
+    list<Bunny> farm;
 
     Colony Ogrimmar;
 
@@ -17,16 +17,16 @@ int main(int argc, const char * argv[])
     Bunny piec;
     Bunny szesc;
 
-    farma.push_back(jeden);
-    farma.push_back(dwa);
-    farma.push_back(trzy);
-    farma.push_back(cztery);
-    farma.push_back(piec);
-    farma.push_back(szesc);
+    farm.push_back(jeden);
+    farm.push_back(dwa);
+    farm.push_back(trzy);
+    farm.push_back(cztery);
+    farm.push_back(piec);
+    farm.push_back(szesc);
 
     
     
-    for (list<Bunny>::iterator it = farma.begin(); it != farma.end(); it++)
+    for (list<Bunny>::iterator it = farm.begin(); it != farm.end(); it++)
     {
         (*it).Print();
         cout << endl;
