@@ -9,9 +9,7 @@ int main(int argc, const char * argv[])
     list<Bunny> farma;
 
     Colony Ogrimmar;
-    Bunny Random;
 
-    Random.GetListName();
     Bunny jeden;
     Bunny dwa;
     Bunny trzy;

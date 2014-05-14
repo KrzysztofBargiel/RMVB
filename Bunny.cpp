@@ -31,17 +31,12 @@ void Bunny::GetListName()
         HighBornBunnies.push_back(imie);
     }
     input.close();
-    
-   for (auto it = HighBornBunnies.begin(); it != HighBornBunnies.end(); it++)
-    {
-        cout << *it << " ";
-   }
-    cout << endl;
 }
 
 Bunny::Bunny()
 {
-    Name = "noName";
+    GetListName();
+    Name = HighBornBunnies[rand() % HighBornBunnies.size()];
     Age = 0;
     plec = (Sex)(rand() % 2);
     

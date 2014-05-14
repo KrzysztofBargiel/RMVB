@@ -15,7 +15,6 @@ public:
     int  getSex();
     void GetListName();
     vector<string> HighBornBunnies;
-    string tab[2] = {"Adam","Max"};
     Bunny();
     ~Bunny();
 
