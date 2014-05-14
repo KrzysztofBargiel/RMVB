@@ -1,11 +1,13 @@
 #include "Bunny.h"
 #include <fstream>
 #include <vector>
+#include <iomanip> // std::setw
+
 using namespace std;
 
 void Bunny::Print()
 {
-    std::cout << Bunny::getName() << " " << Bunny::getAge() << " " << Bunny::getSex();
+    cout << left << setw(11) << Bunny::getName() << "Age: " <<  Bunny::getAge() << " Sex:" << Bunny::getSex() <<" Color: " << Bunny::GetKolor();
 }
 string Bunny::getName()
 {
@@ -32,6 +34,10 @@ void Bunny::GetListName()
     }
     input.close();
 }
+string Bunny::GetKolor()
+{
+    return Kolor;
+}
 
 Bunny::Bunny()
 {
@@ -39,6 +45,7 @@ Bunny::Bunny()
     Name = HighBornBunnies[rand() % HighBornBunnies.size()];
     Age = 0;
     plec = (Sex)(rand() % 2);
+    Kolor = Color[rand() % Color.size()];
     
 };
 

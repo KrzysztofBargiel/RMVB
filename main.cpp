@@ -15,12 +15,15 @@ int main(int argc, const char * argv[])
     Bunny trzy;
     Bunny cztery;
     Bunny piec;
+    Bunny szesc;
 
     farma.push_back(jeden);
     farma.push_back(dwa);
     farma.push_back(trzy);
     farma.push_back(cztery);
     farma.push_back(piec);
+    farma.push_back(szesc);
+
     
     
     for (list<Bunny>::iterator it = farma.begin(); it != farma.end(); it++)

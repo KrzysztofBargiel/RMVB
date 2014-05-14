@@ -14,7 +14,9 @@ public:
     int  getAge();
     int  getSex();
     void GetListName();
+    string GetKolor();
     vector<string> HighBornBunnies;
+    vector<string> Color {"White","Brown","Black","Spotted"};
     Bunny();
     ~Bunny();
 
@@ -23,4 +25,5 @@ private:
     string Name = "";
     int Age = 0;
     Sex plec;
+    string Kolor = "";
 };
