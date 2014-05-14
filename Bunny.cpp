@@ -25,7 +25,7 @@ void Bunny::GetListName()
 {
     ifstream input;
     input.open("Imiona.csv");
-    
+
     while(input.good())
     {
         string imie;
@@ -54,7 +54,7 @@ Bunny::Bunny()
     Age = 0;
     plec = Sex();
     Kolor = Color[rand() % Color.size()];
-    
+
 };
 
 Bunny::~Bunny(){};

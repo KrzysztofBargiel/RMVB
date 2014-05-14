@@ -1,6 +1,7 @@
 #pragma once
 #include <iostream>
 #include <vector>
+#include <cstdlib> // rand
 
 using namespace std;
 
@@ -14,7 +15,7 @@ public:
     void GetListName();
     string GetKolor();
     string Sex();
-    
+
     vector<string> HighBornBunnies;
     vector<string> Color {"White","Brown","Black","Spotted"};
     Bunny();

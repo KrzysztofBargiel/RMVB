@@ -24,15 +24,14 @@ int main(int argc, const char * argv[])
     farm.push_back(piec);
     farm.push_back(szesc);
 
-    
-    
     for (list<Bunny>::iterator it = farm.begin(); it != farm.end(); it++)
     {
         (*it).Print();
         cout << endl;
     }
-        
-    
+
+    cin.ignore();
+
     return 0;
 }
 
