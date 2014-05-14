@@ -9,11 +9,13 @@ class Colony
 {
 public:
     void wypisz();
-    bool Cycle();
-    bool newBunny();
+    void Cycle();
+    void newBunny();
     bool killBunny();
     bool exterminate();
     
+    list<Bunny> farm;
+
     Colony();
     //~Colony();
     

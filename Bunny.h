@@ -25,6 +25,6 @@ private:
     bool RMVB = false;
     string Name = "";
     int Age = 0;
-    string plec;
+    string plec ="DUNNO";
     string Kolor = "";
 };
