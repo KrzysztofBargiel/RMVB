@@ -39,9 +39,9 @@ void Colony::Cycle(int ilosc)
     {
         Print(cycle);
         CountThoseBastards();
-        FreshBlood();
         BornBraveOne();
         getOld();
+        FreshBlood();
         killBunny();
 
 
@@ -135,9 +135,10 @@ int Colony::CountThoseHeretics()
 
 void Colony::FreshBlood()
 {
-    if (CountThoseHeretics() >0)
+    int loop = CountThoseHeretics();
+    if (loop >0)
     {
-        for (int i = 0; i < CountThoseHeretics(); i++)
+        for (int i = 0; i < loop ; i++)
         {
             auto it = farm.begin();
             advance(it, rand() % farm.size());
@@ -145,6 +146,13 @@ void Colony::FreshBlood()
             {
                 (*it).changeSex();
                 cout <<"Fresh Blood... Argh!...Bunny " << (*it).getName() <<" is Vamp now" << endl;
+            }
+            else
+            {
+                if (i > 0)
+                {
+                    i--;
+                } else { i = 0;}
             }
         }
     }
