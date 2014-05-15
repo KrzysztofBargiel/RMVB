@@ -11,6 +11,7 @@ int main()
     int ilosc = 0;
     cout <<"Podaj ilosc cyklil: ";
     cin >> ilosc;
+    cout << endl;
     Ogrimmar.Cycle(ilosc);
     
     return 0;

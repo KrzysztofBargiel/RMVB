@@ -5,20 +5,25 @@
 
 using namespace std;
 
-class Colony
+class Colony : public Bunny
 {
 public:
-    void wypisz();
+    void BornBraveOne();
+    void Print(int cycle);
+    void getOld(); // Bunnies in list<Bunny> get +1 to Age
     void Cycle(int a);
-    void newBunny();
-    bool killBunny();
-    bool exterminate();
-    
+    void newBunny(); // create new Bunny and add him to list<Bunny> farm
+    void killBunny(); // Kill Old Bunnies
+    void FreshBlood();
+    bool exterminate(); // Push "k" to kill 50% of bunny  population
+    int CountThoseBastards();
+    int CountThoseHeretics();
+
     list<Bunny> farm;
 
     Colony();
-    //~Colony();
-    
+    ~Colony();
+
 
 
 private:

@@ -5,6 +5,7 @@
 
 using namespace std;
 
+
 void Bunny::Print()
 {
     cout << left << setw(11) << Bunny::getName() << "Age: " <<  Bunny::getAge() << "\t Sex: " << Bunny::getSex() <<" \tColor: " << Bunny::GetKolor();
@@ -13,10 +14,18 @@ string Bunny::getName()
 {
     return Name;
 }
+int Bunny::setAge()
+{
+    return Age++;
+}
 int  Bunny::getAge()
 {
     return Age;
 
+}
+string Bunny::changeSex()
+{
+    return plec = "Vamp";
 }
 string Bunny::getSex()
 {
@@ -37,9 +46,9 @@ void Bunny::GetListName()
 }
 string Bunny::Sex()
 {
-    string Male = "Male",Female = "Female",Vampire = "Vampire";
+    string Male = "Male",Female = "Female",Vamp = "Vamp";
     int random = rand() % 100;
-    if (random < 2){return Vampire;}
+    if (random < 2){return Vamp;}
     else if (random > 1 && random < 51) {return Male;}
     else {return Female;};
 }
