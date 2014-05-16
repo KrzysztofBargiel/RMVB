@@ -27,7 +27,7 @@ void Colony::Cycle(int ilosc)
     Bunny dwa;
     Bunny trzy;
     Bunny cztery;
-    Bunny piec;
+    Bunny piec ;
     
     farm.push_back(jeden);
     farm.push_back(dwa);
@@ -35,7 +35,7 @@ void Colony::Cycle(int ilosc)
     farm.push_back(cztery);
     farm.push_back(piec);
     
-    while (cycle <= ilosc)
+    while (cycle <= ilosc && Count() >0)
     {
         Print(cycle);
         CountThoseBastards();
@@ -105,7 +105,7 @@ int Colony::CountThoseBastards()
 
 void Colony::Print(int cycle)
 {
-    cout <<"------------------------------------------- No." << cycle <<" V: " << CountThoseHeretics()<< endl;
+    cout <<"------------------------------------------- No." << cycle <<" V: " << CountThoseHeretics()<< " A: " << Count() <<endl;
     
     for (list<Bunny>::iterator it = farm.begin(); it != farm.end(); it++)
     {
@@ -136,9 +136,10 @@ int Colony::CountThoseHeretics()
 void Colony::FreshBlood()
 {
     int loop = CountThoseHeretics();
-    if (loop >0)
+    if  (CountThoseHeretics() > Count()){loop = Count();}
+    if  (loop >0)
     {
-        for (int i = 0; i < loop ; i++)
+        for (int i = 0; i < loop ;)
         {
             auto it = farm.begin();
             advance(it, rand() % farm.size());
@@ -146,14 +147,20 @@ void Colony::FreshBlood()
             {
                 (*it).changeSex();
                 cout <<"Fresh Blood... Argh!...Bunny " << (*it).getName() <<" is Vamp now" << endl;
+                i++;
             }
-            else
-            {
-                if (i > 0)
-                {
-                    i--;
-                } else { i = 0;}
-            }
+
         }
     }
+}
+int Colony::Count()
+{
+    int number = 0;
+    
+    for (list<Bunny>::iterator it = farm.begin(); it != farm.end(); it++)
+    {
+        if (!((*it).getSex() =="Vamp")) {number++;}
+    }
+    
+    return number; // zwraca ilosc Bunnisow ktore sie urodzą
 }

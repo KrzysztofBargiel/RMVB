@@ -23,6 +23,7 @@ public:
     vector<string> HighBornBunnies;
     vector<string> Color {"White","Brown","Black","Spotted"};
     Bunny();
+    Bunny(string,int,string,string);
     ~Bunny();
 
 private:

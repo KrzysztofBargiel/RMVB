@@ -18,6 +18,7 @@ public:
     bool exterminate(); // Push "k" to kill 50% of bunny  population
     int CountThoseBastards();
     int CountThoseHeretics();
+    int Count();
 
     list<Bunny> farm;
 

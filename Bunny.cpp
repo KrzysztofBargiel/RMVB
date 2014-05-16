@@ -8,7 +8,7 @@ using namespace std;
 
 void Bunny::Print()
 {
-    cout << left << setw(11) << Bunny::getName() << "Age: " <<  Bunny::getAge() << "\t Sex: " << Bunny::getSex() <<" \tColor: " << Bunny::GetKolor();
+    cout << left << setw(11) << Bunny::getName() << setw(3) <<"Age: " <<  Bunny::getAge() << "\t Sex: " << Bunny::getSex() <<" \tColor: " << Bunny::GetKolor();
 }
 string Bunny::getName()
 {
@@ -66,6 +66,9 @@ Bunny::Bunny()
     Kolor = Color[rand() % Color.size()];
 
 };
+
+Bunny::Bunny(string a_name,int a_age,string a_sex,string a_color):
+        Name(a_name),Age(a_age),plec(a_sex),Kolor(a_color){};
 
 Bunny::~Bunny(){};
 
