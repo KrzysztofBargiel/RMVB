@@ -47,7 +47,7 @@ void Bunny::GetListName()
 string Bunny::Sex()
 {
     string Male = "Male",Female = "Female",Vamp = "Vamp";
-    int random = rand() % 100;
+    int random = rand() % 101;
     if (random < 2){return Vamp;}
     else if (random > 1 && random < 51) {return Male;}
     else {return Female;};
@@ -67,8 +67,7 @@ Bunny::Bunny()
 
 };
 
-Bunny::Bunny(string a_name,int a_age,string a_sex,string a_color):
-        Name(a_name),Age(a_age),plec(a_sex),Kolor(a_color){};
+
 
 Bunny::~Bunny(){};
 
